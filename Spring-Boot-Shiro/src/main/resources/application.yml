@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://x.x.x.x:3306/web_test
+    username: xxxxxxx
+    password: xxxxxxx
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
